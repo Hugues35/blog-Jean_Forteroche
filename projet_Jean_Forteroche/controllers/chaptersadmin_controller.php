@@ -1,13 +1,9 @@
 <?php
 
 include_once '_classes/Chapters.php';
-include_once '_classes/admin.php';
+include_once '_classes/Admin.php';
 
-
-/*if (!isset($_SESSION['admin'])) {
-    echo "Vous n'êtes pas autorisé.";
-    exit();
-}*/
+$allChapters = Chapters::getAllChapters();
 
 // Formulaire ajout contenu d'un chapitre
 if(!empty($_POST) && isset($_POST['btnChaptersAdmin'])){

@@ -6,4 +6,3 @@ include_once '_classes/Messages.php';
 
 $allMessages = Messages::getAllMessages();
 
-

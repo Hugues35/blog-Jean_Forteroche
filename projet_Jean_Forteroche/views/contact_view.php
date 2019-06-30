@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <?php include_once 'views/includes/head.php '?>
+    <?php include_once "includes/head.php" ?>
     <title>Contact</title>
 </head>
 
 <body>
 
-    <?php include_once 'views/includes/header.php '?>
+    <?php include_once "includes/header.php" ?>
 
     <section id="home-body-contact">
         <div class="container">     
@@ -38,7 +38,7 @@
         </div>
     </section>
 
-    <?php include_once 'views/includes/footer.php '?>
+    <?php include_once "includes/footer.php" ?>
 
 </body>
 </html>

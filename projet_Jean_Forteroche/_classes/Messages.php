@@ -34,7 +34,6 @@ class Messages
 
     }
 
-
     /**
      * Envoi de tous les messages
      * @return array
@@ -111,4 +110,34 @@ class Messages
 
     }
 
+    /* Mise à jour nombre signalements */
+    public static function addSignalement($id){
+        global $db;
+
+        $reqMessages = $db->prepare("Update messages set signalements = signalements + 1 WHERE id = ?");
+        $reqMessages->execute([$id]);
+        return $reqMessages->fetchAll();
+    }
+
+    /* Modification contenu message */
+    public static function modifyMessage($id, $newmessage){
+        global $db;
+        
+        $query = "UPDATE messages SET message = ?, signalements = 0 WHERE id = ? ";
+        $requete = $db->prepare($query);
+        $requete->execute([$newmessage, $id]);
+        sleep(1);
+        unset($_POST);
+    }
+
+    /* Suppression message */
+    public static function deleteMessage($idDelete){
+        global $db;
+        
+        $query = "DELETE FROM messages WHERE id = $idDelete";
+        $requete = $db->prepare($query);
+        $requete->execute();
+        sleep(1);
+        unset($_POST);
+    }
 }

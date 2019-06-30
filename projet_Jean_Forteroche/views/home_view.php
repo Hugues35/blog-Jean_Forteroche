@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <?php include_once 'views/includes/head.php '?>
+    <?php include_once "includes/head.php"?>
     <title>Billet simple pour l'Alaska</title>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="60">
 
-    <?php include_once 'views/includes/header.php '?>
+    <?php include_once "includes/header.php"?>
 
     <section id="about" class="container-fluid">
         <div class="col-8 col-lg-4 profile-picture">  
@@ -24,7 +24,6 @@
         <div class="container">
         
             <div class="row">
-
                 <div class="col-md-12">
                     <div class="presentation-block">
                         <h2>A propos</h2>
@@ -70,85 +69,13 @@
                                 <?php endforeach; ?>
                         </ul>
                     </div>
-                </div>
-
-                <!--<div class="col-md-6">
-                    <div class="chapterextract-block">
-                        <h4>Chapitre 1</h4>
-                        <h3>"Grande terre"</h3>
-                        <span><i class="fas fa-feather-alt"></i></span>
-                        <div class="mt-20"></div>                  
-                        <h5>Dernier commentaire</h5>
-                        <div class="mt-20"></div>
-                        <div class="red-divider"></div>                          
-                        <p class="chapter-com-message"><i class="far fa-comment"></i><?= substr($lastMessage['message'],0,50)?></p><a href=".chapter1.php?num=<?php echo ($lastMessage[0]);?>">(lire la suite)</a>
-                        <p class="chapter-com-date-pseudo"><i class="far fa-calendar-alt"></i><?= date_format(date_create($lastMessage['date']), "d/m/Y H:i")?><i class="fas fa-user"></i><?= $lastMessage['pseudo']?></p>
-                        <div class="mt-50"></div>                        
-                        <p class="chapter-com-link"><a href="./chapter1"><i class="far fa-hand-point-right"></i>Suite des commentaires...</a></p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                     <div class="chapterextract-block">
-                        <h4>Chapitre 2</h4>
-                        <h3>"Kodiak la sauvage"</h3>
-                        <span><i class="fas fa-feather-alt"></i></span>
-                        <div class="mt-20"></div>                   
-                        <h5>Dernier commentaire</h5>
-                        <div class="mt-20"></div>
-                        <div class="red-divider"></div>                          
-                        <p class="chapter-com-message"><i class="far fa-comment"></i><?= substr($lastMessage['message'],0,50)?></p>
-                        <p class="chapter-com-date-pseudo"><i class="far fa-calendar-alt"></i><?= date_format(date_create($lastMessage['date']), "d/m/Y H:i")?><i class="fas fa-user"></i><?= $lastMessage['pseudo']?></p> 
-                        <div class="mt-50"></div>                          
-                        <p class="chapter-com-link"><a href="./chapter1"><i class="far fa-hand-point-right"></i>Suite des commentaires...</a></p>
-                    </div>
-                </div>
-                 <div class="col-md-6">
-                    <div class="chapterextract-block">
-                        <h4>Chapitre 3</h4>
-                        <h3>"Les filles de l’air"</h3>
-                        <span><i class="fas fa-feather-alt"></i></span>
-                        <div class="mt-20"></div>                  
-                        <h5>Dernier commentaire</h5>
-                        <div class="mt-20"></div>
-                        <div class="red-divider"></div>                          
-                        <p class="chapter-com-message"><i class="far fa-comment"></i><?= substr($lastMessage['message'],0,50)?></p>
-                        <p class="chapter-com-date-pseudo"><i class="far fa-calendar-alt"></i><?= date_format(date_create($lastMessage['date']), "d/m/Y H:i")?><i class="fas fa-user"></i><?= $lastMessage['pseudo']?></p>
-                        <div class="mt-50"></div>                           
-                        <p class="chapter-com-link"><a href="./chapter1"><i class="far fa-hand-point-right"></i>Suite des commentaires...</a></p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                     <div class="chapterextract-block">
-                        <h4>Chapitre 4</h4>
-                        <h3>"La dernière frontière"</h3>
-                        <span><i class="fas fa-feather-alt"></i></span>
-                        <div class="mt-20"></div>                   
-                        <h5>Dernier commentaire</h5>
-                        <div class="mt-20"></div>
-                        <div class="red-divider"></div>                          
-                        <p class="chapter-com-message"><i class="far fa-comment"></i><?= substr($lastMessage['message'],0,50)?></p>
-                        <p class="chapter-com-date-pseudo"><i class="far fa-calendar-alt"></i><?= date_format(date_create($lastMessage['date']), "d/m/Y H:i")?><i class="fas fa-user"></i><?= $lastMessage['pseudo']?></p>
-                        <div class="mt-50"></div>                        
-                        <p class="chapter-com-link"><a href="./chapter1"><i class="far fa-hand-point-right"></i>Suite des commentaires...</a></p>
-                    </div>
-                </div>
-
-                <div class="col-md-12">
-                    <div class="summary-block">
-                        <h4>Formulaire</h4>
-                        <div class="summary-block">
-                            <form method="post">
-                                <textarea id="textarea">Hello, World!</textarea>
-                            </form>
-                        </div>
-                    </div>
-                </div>-->
+                </div> 
             </div>
         </div>
               
     </section>
 
-    <?php include_once 'views/includes/footer.php '?>
+    <?php include_once "includes/footer.php"?>
 
 </body>
 </html>

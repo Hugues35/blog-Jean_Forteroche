@@ -70,6 +70,7 @@ class Admin
         return $adminPublicInfo;
     }
 
+
     static function getPublicInfoByKey($key){
         global $db;
 
@@ -93,6 +94,19 @@ class Admin
             return false;
         } else {
             return true;
+        }
+    }
+
+    static function getAdminWithUsername($username){
+        global $db;
+
+        $reqAdminUsers = $db->prepare('SELECT * FROM admin where username = ?');
+        $reqAdminUsers->execute([$username]);
+        $admin = $reqAdminUsers->fetch();
+        if ($admin === false){
+            return "";
+        } else {
+            return $admin;
         }
     }
 }

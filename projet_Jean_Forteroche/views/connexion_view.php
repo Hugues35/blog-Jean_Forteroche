@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <?php include_once 'views/includes/head.php ' ?>
+    <?php include_once "includes/head.php" ?>
     <title>Connection</title>
 </head>
 
 <body>
 
-    <?php include_once 'views/includes/header.php ' ?>
+    <?php include_once "includes/header.php" ?>
 
     <section id="about" class="container-fluid">
         <div class="col-8 col-lg-4 profile-picture">
@@ -82,7 +82,7 @@
     </section>
 
 
-    <?php include_once 'views/includes/footer.php ' ?>
+    <?php include_once "includes/footer.php" ?>
 
 </body>
 </html>

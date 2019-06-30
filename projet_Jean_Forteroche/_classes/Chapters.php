@@ -81,12 +81,25 @@ class Chapters
 
     }
 
+    /* Récupération de tous les chapitres */
     public static function getAllChapters(){
         global $db;
 
         $reqChapitres = $db->prepare("SELECT * FROM chapters");
         $reqChapitres->execute([]);
         return $reqChapitres->fetchAll();
+    }
+
+
+    /* Modification contenu d'un chapitre */
+    public static function modifyChapter($id, $newstory, $newcategory){
+        global $db;
+        
+        $query = "UPDATE chapters SET story = ?, category = ? WHERE id = ?";
+        $requete = $db->prepare($query);
+        $requete->execute([$newstory, $newcategory, $id]);
+        sleep(1);
+        unset($_POST);
     }
 
 }

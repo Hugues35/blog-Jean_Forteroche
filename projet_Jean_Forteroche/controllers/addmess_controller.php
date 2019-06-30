@@ -41,4 +41,3 @@ if(!empty($_POST) && isset($_POST['btnMessage'])){
         $error = "Une erreur s'est produite. Essayez à nouveau !";
     }
 }
-

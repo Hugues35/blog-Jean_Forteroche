@@ -21,14 +21,12 @@
     </section>
 
     <section id="home-body">
-        <div class="container">
-        
+        <div class="container">       
             <div class="row">
-
                 <div class="col-md-12">
                     <div class="alert-block">
                         <div class="mt-20"></div>
-                        <div style="color:green;font-weight: bold">Votre signalement nous a bien été transmis.</div>
+                        <div style="color:green;font-weight: bold">Votre message a bien été ajouté.</div>
                         <div class="mt-20"></div>
                         <p>Nous vous remercions.</p>
                         <p><i class="fas fa-user-cog"></i>L'administrateur du site.</p>  
